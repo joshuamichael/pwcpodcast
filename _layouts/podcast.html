@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+    <audio src="{{site.base_url}}/audio/{{page.podcast_file}}" controls preload="auto" autobuffer></audio>
+
+    {{ content }}
+</div>
